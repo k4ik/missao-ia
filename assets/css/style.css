@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 :root{
-  --cor-fundo: #b6dbf7 ;
-  --cor-principal: #26516d ;
-  --cor-secundaria: #212333; 
-  --cor-destaque: #f8f3f3;
-  --cor-texto: #D7F9FF;
-
+  --cor-fundo: #e5f7ed; 
+  --cor-principal: #4caf50; 
+  --cor-secundaria: #388e3c; 
+  --cor-destaque: #ff7043; 
+  --cor-texto: #333; 
 }
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: var(--cor-fundo);
-  color: var(--cor-destaque);
+  color: var(--cor-texto);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,16 +31,17 @@ body {
   max-width: 600px;
   text-align: center;
   padding: 40px 20px;
-  border-radius: 49px;
-  box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.425);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .caixa-perguntas {
   text-align: justify;
   width: 90%;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 20px;
+  line-height: 1.5;
 }
 
 .caixa-alternativas {
@@ -53,15 +54,19 @@ body {
 h1{
   color: var(--cor-destaque);
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 button {
-  background-color: var(--cor-fundo);
+  background-color: var(--cor-secundaria);
   border: 1px solid var(--cor-secundaria);
-  padding: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
 
-  &:hover {
-    background-color: var(--cor-secundaria);
-    color: #fff;
-  }
+button:hover {
+  background-color: var(--cor-principal);
 }
